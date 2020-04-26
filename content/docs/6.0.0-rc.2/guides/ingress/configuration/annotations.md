@@ -1,0 +1,76 @@
+---
+title: Configure Ingress Annotations
+menu:
+  docs_6.0.0-rc.2:
+    identifier: annotations-configuration
+    name: Annotations
+    parent: config-ingress
+    weight: 1
+product_name: voyager
+menu_name: docs_6.0.0-rc.2
+section_menu_id: guides
+info:
+  version: 6.0.0-rc.2
+---
+
+# Configure ingress with annotations
+
+Below is the full list of supported annotations:
+
+|  Keys  |   Value   |  Default |
+|--------|-----------|----------|
+| [ingress.appscode.com/type](/docs/6.0.0-rc.2/concepts/README) | LoadBalancer, HostPort, NodePort, Internal | `LoadBalancer` |
+| [ingress.appscode.com/api-schema](/docs/6.0.0-rc.2/concepts/overview) | {APIGroup}/{APIVersion} | `voyager.appscode.com/v1beta1` |
+| [ingress.appscode.com/accept-proxy](/docs/6.0.0-rc.2/guides/ingress/configuration/accept-proxy) | bool | `false` |
+| [ingress.appscode.com/affinity](/docs/6.0.0-rc.2/guides/ingress/http/sticky-session) | `cookie` | |
+| [ingress.appscode.com/session-cookie-hash](/docs/6.0.0-rc.2/guides/ingress/http/sticky-session) | string | |
+| [ingress.appscode.com/session-cookie-name](/docs/6.0.0-rc.2/guides/ingress/http/sticky-session) | string | `SERVERID` |
+| [ingress.appscode.com/hsts](/docs/6.0.0-rc.2/guides/ingress/http/hsts) | bool | `true` |
+| [ingress.appscode.com/hsts-include-subdomains](/docs/6.0.0-rc.2/guides/ingress/http/hsts) | bool | `false` |
+| [ingress.appscode.com/hsts-max-age](/docs/6.0.0-rc.2/guides/ingress/http/hsts) | string | `15768000` |
+| [ingress.appscode.com/hsts-preload](/docs/6.0.0-rc.2/guides/ingress/http/hsts) | bool | `false` |
+| [ingress.appscode.com/use-node-port](/docs/6.0.0-rc.2/concepts/ingress-types/nodeport) | bool | `false` |
+| [ingress.appscode.com/enable-cors](/docs/6.0.0-rc.2/guides/ingress/http/cors) | bool | `false` |
+| [ingress.appscode.com/cors-allow-headers](/docs/6.0.0-rc.2/guides/ingress/http/cors) | string | `DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization` |
+| [ingress.appscode.com/cors-allow-methods](/docs/6.0.0-rc.2/guides/ingress/http/cors) | string | `GET,PUT,POST,DELETE,PATCH,OPTIONS` |
+| [ingress.appscode.com/cors-allow-origin](/docs/6.0.0-rc.2/guides/ingress/http/cors) | string | `*` |
+| [ingress.appscode.com/default-option](/docs/6.0.0-rc.2/guides/ingress/configuration/default-options) | map | `{"http-server-close": "true", "dontlognull": "true"}` |
+| [ingress.appscode.com/default-timeout](/docs/6.0.0-rc.2/guides/ingress/configuration/default-timeouts) | map | `{"connect": "50s", "server": "50s", "client": "50s", "client-fin": "50s", "tunnel": "50s"}` |
+| [ingress.appscode.com/auth-type](/docs/6.0.0-rc.2/guides/ingress/security/basic-auth) | `basic` | |
+| [ingress.appscode.com/auth-realm](/docs/6.0.0-rc.2/guides/ingress/security/basic-auth) | string | |
+| [ingress.appscode.com/auth-secret](/docs/6.0.0-rc.2/guides/ingress/security/basic-auth) | string | |
+| [ingress.appscode.com/auth-tls-error-page](/docs/6.0.0-rc.2/guides/ingress/security/tls-auth) | string | |
+| [ingress.appscode.com/auth-tls-secret](/docs/6.0.0-rc.2/guides/ingress/security/tls-auth) | string | |
+| [ingress.appscode.com/auth-tls-verify-client](/docs/6.0.0-rc.2/guides/ingress/security/tls-auth) | `required` or, `optional` | `required` |
+| [ingress.appscode.com/backend-tls](/docs/6.0.0-rc.2/guides/ingress/tls/backend-tls) | string | |
+| [ingress.appscode.com/replicas](/docs/6.0.0-rc.2/guides/ingress/scaling) | int | `1` |
+| [ingress.appscode.com/backend-weight](/docs/6.0.0-rc.2/guides/ingress/http/blue-green-deployment) | int | |
+| [ingress.appscode.com/whitelist-source-range](/docs/6.0.0-rc.2/guides/ingress/configuration/whitelist) | string | |
+| [ingress.appscode.com/max-connections](/docs/6.0.0-rc.2/guides/ingress/configuration/max-connections) | int | |
+| [ingress.appscode.com/ssl-redirect](/docs/6.0.0-rc.2/guides/ingress/configuration/ssl-redirect) | bool | `true` |
+| [ingress.appscode.com/force-ssl-redirect](/docs/6.0.0-rc.2/guides/ingress/configuration/ssl-redirect) | bool | `false` |
+| [ingress.appscode.com/limit-connection](/docs/6.0.0-rc.2/guides/ingress/configuration/rate-limit) | int | |
+| [ingress.appscode.com/limit-rpm](/docs/6.0.0-rc.2/guides/ingress/configuration/rate-limit) | int | |
+| [ingress.appscode.com/limit-rps](/docs/6.0.0-rc.2/guides/ingress/configuration/rate-limit) | int | |
+| [ingress.appscode.com/errorfiles](/docs/6.0.0-rc.2/guides/ingress/configuration/error-files) | string | |
+| [ingress.appscode.com/proxy-body-size](/docs/6.0.0-rc.2/guides/ingress/configuration/body-size) | int | |
+| [ingress.appscode.com/ssl-passthrough](/docs/6.0.0-rc.2/guides/ingress/configuration/ssl-passthrough) | bool | `false` |
+| [ingress.appscode.com/rewrite-target](/docs/6.0.0-rc.2/guides/ingress/configuration/rewrite-target) | string | |
+| [ingress.appscode.com/keep-source-ip](/docs/6.0.0-rc.2/guides/ingress/configuration/keep-source-ip) | bool | `false` |
+| [ingress.appscode.com/load-balancer-ip](/docs/6.0.0-rc.2/guides/ingress/configuration/loadbalancer-ip) | string | |
+| [ingress.appscode.com/annotations-pod](/docs/6.0.0-rc.2/guides/ingress/configuration/pod-annotations) | map | |
+| [ingress.appscode.com/annotations-service](/docs/6.0.0-rc.2/guides/ingress/configuration/service-annotations) | map | |
+| [ingress.appscode.com/stats](/docs/6.0.0-rc.2/guides/ingress/monitoring/haproxy-stats) | bool | `false` |
+| [ingress.appscode.com/stats-port](/docs/6.0.0-rc.2/guides/ingress/monitoring/haproxy-stats) | int | `56789` |
+| [ingress.appscode.com/stats-secret-name](/docs/6.0.0-rc.2/guides/ingress/monitoring/haproxy-stats) | string | |
+| [ingress.appscode.com/monitoring-agent](/docs/6.0.0-rc.2/guides/ingress/monitoring/using-coreos-prometheus-operator) | string  |         |
+| [ingress.appscode.com/service-monitor-labels](/docs/6.0.0-rc.2/guides/ingress/monitoring/using-coreos-prometheus-operator) | map     |         |
+| [ingress.appscode.com/service-monitor-namespace](/docs/6.0.0-rc.2/guides/ingress/monitoring/using-coreos-prometheus-operator) | string  |         |
+| [ingress.appscode.com/service-monitor-endpoint-port](/docs/6.0.0-rc.2/guides/ingress/monitoring/using-coreos-prometheus-operator) | integer | 56790   |
+| [ingress.appscode.com/service-monitor-endpoint-scrape-interval](/docs/6.0.0-rc.2/guides/ingress/monitoring/using-coreos-prometheus-operator) | string  |         |
+| [ingress.appscode.com/use-dns-resolver](/docs/6.0.0-rc.2/guides/ingress/http/external-svc#using-external-domain) | bool | `false` |
+| [ingress.appscode.com/dns-resolver-nameservers](/docs/6.0.0-rc.2/guides/ingress/http/external-svc#using-external-domain) | string | |
+| [ingress.appscode.com/dns-resolver-check-health](/docs/6.0.0-rc.2/guides/ingress/http/external-svc#using-external-domain) | bool | `true` |
+| [ingress.appscode.com/dns-resolver-retries](/docs/6.0.0-rc.2/guides/ingress/http/external-svc#using-external-domain) | int | `0` |
+| [ingress.appscode.com/dns-resolver-timeout](/docs/6.0.0-rc.2/guides/ingress/http/external-svc#using-external-domain) | map | |
+| [ingress.appscode.com/dns-resolver-hold](/docs/6.0.0-rc.2/guides/ingress/http/external-svc#using-external-domain) | map | |

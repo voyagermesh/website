@@ -1,0 +1,13 @@
+---
+title: Guides
+description: Voyager Guides
+menu:
+  docs_7.1.0:
+    identifier: concepts
+    name: Concepts
+    weight: 20
+menu_name: docs_7.1.0
+info:
+  version: 7.1.0
+---
+

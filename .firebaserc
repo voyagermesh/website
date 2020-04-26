@@ -7,14 +7,14 @@
     "kubedb-new-e7965": {
       "hosting": {
         "hugo": [
-          "stashed-v1-hugo"
+          "voyagermesh-v1-hugo"
         ]
       }
     },
     "appscode-domains": {
       "hosting": {
         "hugo": [
-          "stashed-prod"
+          "voyagermesh-prod"
         ]
       }
     }
