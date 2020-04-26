@@ -1,5 +1,5 @@
-title: Backup your Kubernetes Stateful Applications
-baseurl: https://stash.run
+title: Secure HAProxy Ingress Controller for Kubernetes
+baseurl: https://voyagermesh.com
 languageCode: en-us
 assetDir: static
 googleAnalytics: UA-62096468-4
@@ -7,9 +7,10 @@ disableKinds:
 - taxonomy
 - taxonomyTerm
 params:
-  product_key: stash
+  product_key: voyager
   main_menu_dropdown_item: database
   domain_appscode: https://appscode.com
+  domain_voyagermesh: https://voyagermesh.com
   domain_stash: https://stash.run
   domain_kubedb: https://kubedb.com
   domain_kubevault: https://kubevault.com
@@ -44,7 +45,7 @@ menu:
   - name: Twitter
     identifier: twitter
     parent: community
-    url: https://twitter.com/KubeStash
+    url: https://twitter.com/voyagermesh
     weight: 2
   - name: Slack
     identifier: slack
