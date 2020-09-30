@@ -2238,7 +2238,7 @@ span.new-item {
   padding: 20px;
   background: #fff;
   position: absolute;
-  min-width: 730px;
+  min-width: 480px;
   top: 40px;
   transform: translateX(-50%);
   left: 50%;
