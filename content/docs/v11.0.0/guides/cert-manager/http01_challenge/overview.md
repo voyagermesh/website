@@ -1,7 +1,6 @@
 ---
 title: Issue Let's Encrypt certificate using HTTP-01 challenge with cert-manager
-description: Issue Let's Encrypt certificate using HTTP-01 challenge with cert-manager
-  in Kubernetes
+description: Issue Let's Encrypt certificate using HTTP-01 challenge with cert-manager in Kubernetes
 menu:
   docs_v11.0.0:
     identifier: overview-http-cert-manager
