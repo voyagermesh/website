@@ -74,6 +74,20 @@
 <!-- documentation area start -->
 <div class="documentation-area">
   <div class="container section">
+    {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
+    {{ if not (eq $p.latestVersion $currentBranch) }}
+    <article class="message is-danger">
+        <div class="message-body">
+          {{ $url := urls.Parse (absURL .Permalink) }}
+          {{ $nurl := "/docs/latest/" }}
+          {{ $nf := replace .File.Path (print "/" $currentBranch "/") (print "/" $p.latestVersion "/") }}
+          {{ if fileExists $nf }}
+          {{ $nurl = replace $url.Path (print "/" $currentBranch) (print "/" $p.latestVersion) }}
+          {{ end }}
+          You are looking at the documentation of a prior release. To read the documentation of the latest release, please visit <a href="{{ $nurl }}">here</a>.
+        </div>
+    </article>
+    {{ end }}
     <div class="columns">
       <div class="column is-3">
         <!-- left sidebar area start -->
@@ -86,8 +100,6 @@
           </div>
 
           <div class="kd-version">
-            {{ $currentBranch := (index (split .Params.menu_name "_") 1) }}
-
             <div class="dropdown">
               <div class="dropdown-trigger">
                 <button
