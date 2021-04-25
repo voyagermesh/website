@@ -97,7 +97,7 @@ $ helm install voyager-operator appscode/voyager \
   --version {{< param "info.version" >}} \
   --namespace kube-system \
   --set cloudProvider=$provider \
-  --set-file global.license=/path/to/the/license.txt
+  --set-file license=/path/to/the/license.txt
 ```
 
 To see the detailed configuration options, visit [here](https://github.com/voyagermesh/installer/tree/{{< param "info.version" >}}/charts/voyager).
@@ -134,7 +134,7 @@ $ helm install appscode/voyager --name voyager-operator \
   --version {{< param "info.version" >}} \
   --namespace kube-system \
   --set cloudProvider=$provider \
-  --set-file global.license=/path/to/the/license.txt
+  --set-file license=/path/to/the/license.txt
 ```
 
 To see the detailed configuration options, visit [here](https://github.com/voyagermesh/installer/tree/{{< param "info.version" >}}/charts/voyager).
@@ -171,8 +171,8 @@ $ helm template voyager-operator appscode/voyager \
   --version {{< param "info.version" >}} \
   --namespace kube-system \
   --set cloudProvider=$provider \
-  --set-file global.license=/path/to/the/license.txt    \
-  --set global.skipCleaner=true | kubectl apply -f -
+  --set-file license=/path/to/the/license.txt    \
+  --set cleaner.skip=true | kubectl apply -f -
 ```
 
 To see the detailed configuration options, visit [here](https://github.com/voyagermesh/installer/tree/{{< param "info.version" >}}/charts/voyager).
