@@ -2,7 +2,6 @@
   Global CSS start
 ========================*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:400,400i,500,500i,700");
-@import url(/assets/css/calendly.css);
 @import url(/home/mohin/hugo-project/stash/website/static/assets/css/video-js.css);
 body {
   font-family: "Roboto", sans-serif;
@@ -1483,41 +1482,44 @@ body.fixed-nav .fixed-menu {
   z-index: -1;
 }
 
-.hero-area .dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.hero-area .image-carousel-wrapper .carousel-inner .single-slider-wrapper {
+  padding: 0px 0px 40px;
 }
 
-.hero-area .dot {
-  border: none;
+.hero-area .image-carousel-wrapper .carousel-inner .single-slider-wrapper a {
+  display: block;
+}
+
+.hero-area .image-carousel-wrapper .carousel-inner .single-slider-wrapper img {
+  border-radius: 14px;
+}
+
+.hero-area .image-carousel-wrapper .carousel-inner .slider-navigation-previous,
+.hero-area .image-carousel-wrapper .carousel-inner .slider-navigation-next {
+  display: none;
+}
+
+.hero-area .image-carousel-wrapper .carousel-inner .slider-pagination {
+  display: block;
+}
+
+.hero-area .image-carousel-wrapper .carousel-inner .slider-pagination .slider-page {
+  background-color: #e8e9ea;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   width: 8px;
   height: 8px;
-  background: #e8e9ea;
-  border-radius: 50%;
   margin: 0 5px;
-  padding: 5px;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
-.hero-area .dot:hover {
+.hero-area .image-carousel-wrapper .carousel-inner .slider-pagination .slider-page:hover {
+  background-color: #4d4dcb;
+}
+
+.hero-area .image-carousel-wrapper .carousel-inner .slider-pagination .slider-page.is-active {
   background-color: #4d4dcb;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-.hero-area .dot:focus {
-  outline: none;
-}
-
-.hero-area .dot--active {
-  background: #4d4dcb;
 }
 
 @-webkit-keyframes animatation-2 {
@@ -2816,6 +2818,10 @@ body.fixed-nav .documentation-menu {
 .full-info h5 a,
 .full-info h6 a {
   font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .full-info h1 a svg,
@@ -2825,18 +2831,14 @@ body.fixed-nav .documentation-menu {
 .full-info h5 a svg,
 .full-info h6 a svg {
   padding-left: 10px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
 }
 
-.full-info h1:hover a svg,
-.full-info h2:hover a svg,
-.full-info h3:hover a svg,
-.full-info h4:hover a svg,
-.full-info h5:hover a svg,
-.full-info h6:hover a svg {
+.full-info h1:hover a,
+.full-info h2:hover a,
+.full-info h3:hover a,
+.full-info h4:hover a,
+.full-info h5:hover a,
+.full-info h6:hover a {
   opacity: 1;
   visibility: visible;
 }
@@ -2852,15 +2854,7 @@ body.fixed-nav .documentation-menu {
   font-size: 24px;
 }
 
-.full-info h2 a {
-  font-size: 24px;
-}
-
 .full-info h3 {
-  font-size: 18px;
-}
-
-.full-info h3 a {
   font-size: 18px;
 }
 
@@ -2868,23 +2862,11 @@ body.fixed-nav .documentation-menu {
   font-size: 16px;
 }
 
-.full-info h4 a {
-  font-size: 16px;
-}
-
 .full-info h5 {
   font-size: 15px;
 }
 
-.full-info h5 a {
-  font-size: 15px;
-}
-
 .full-info h6 {
-  font-size: 13px;
-}
-
-.full-info h6 a {
   font-size: 13px;
 }
 
@@ -2935,11 +2917,6 @@ blockquote {
 .full-info ol li pre {
   text-indent: 0px;
   margin-left: -30px;
-}
-
-.full-info ul li .highlight pre,
-.full-info ol li .highlight pre {
-  margin-left: 0px;
 }
 
 .full-info ul li:before {
@@ -3681,7 +3658,7 @@ span.new-item {
   padding: 12px 6px 6px;
   background: #ffffff;
   position: absolute;
-  min-width: 480px;
+  min-width: 730px;
   top: 40px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -4193,33 +4170,6 @@ video {
   color: #74818d !important;
 }
 
-/****************************************
-Responsive Classes
-*****************************************/
-@media (max-width: 575.98px) {
-  .image-carousel-wrapper .shape-1,
-  .image-carousel-wrapper .shape-2,
-  .image-carousel-wrapper .shape-3 {
-    display: none;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .image-carousel-wrapper .shape-1,
-  .image-carousel-wrapper .shape-2,
-  .image-carousel-wrapper .shape-3 {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .image-carousel-wrapper .shape-1,
-  .image-carousel-wrapper .shape-2,
-  .image-carousel-wrapper .shape-3 {
-    display: none;
-  }
-}
-
 .button.ac-button {
   border-radius: 4px;
 }
@@ -4337,9 +4287,7 @@ body.stash .pricing-button .kd-button,
 body.stash .subscription-form .button:hover,
 body.stash .searchbar-area button,
 body.stash .pagination-list li a.is-active,
-body.stash .single-product-feature-wrapper:after,
-body.stash .assistance-card-wrapper .single-card .card-body .subscription-form .button,
-body.stash .assistance-card-wrapper .single-card .card-body .button:hover {
+body.stash .single-product-feature-wrapper:after {
   background-color: #5E2DEA;
 }
 
@@ -4368,8 +4316,7 @@ body.stash .kd-sidebar-menu li a:hover,
 body.stash .subscription-form .button,
 body.stash .section-title h4,
 body.stash .hero-content-inner h4,
-body.stash .single-search-result h3 a,
-body.stash .assistance-card-wrapper .single-card .card-body .button {
+body.stash .single-search-result h3 a {
   color: #5E2DEA;
 }
 
@@ -4385,8 +4332,7 @@ body.stash .textarea.is-focused,
 body.stash .textarea:active,
 body.stash .textarea:focus,
 body.stash .searchbar-area input:focus,
-body.stash .subscription-form .input:hover,
-body.stash .assistance-card-wrapper .single-card .card-body .subscription-form input {
+body.stash .subscription-form .input:hover {
   border-color: #5E2DEA;
 }
 
@@ -4394,16 +4340,11 @@ body.stash .pricing-top:before {
   border-right-color: #3d12b8;
 }
 
-body.stash .assistance-card-wrapper .single-card .card-body .subscription-form .button:hover {
-  background-color: #3d12b8;
-}
-
 body.stash .go-to-top {
   background-color: rgba(94, 45, 234, 0.8);
 }
 
-body.stash .documentation-menu,
-body.stash .assistance-card-wrapper .single-card .card-body .button {
+body.stash .documentation-menu {
   background-color: #dfd5fb;
 }
 
@@ -4541,7 +4482,7 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta .plan-title.enterprise ul li {
   background-color: #ffefe7;
-  width: 33.33%;
+  width: 25%;
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta .plan-title.enterprise ul li:nth-child(2) {
@@ -4746,8 +4687,8 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
 .features-plan-area .single-features-area .single-features .features-plan-wrapper .features-plan.enterprise {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33.33% 33.33% 33.34%;
-      grid-template-columns: 33.33% 33.33% 33.34%;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
   font-size: 14px;
   height: 100%;
 }
@@ -4782,10 +4723,7 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
           justify-content: center;
 }
 
-.assistance-card-wrapper {
-}
-
-.assistance-card-wrapper .single-card {
+.single-assistance {
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
@@ -4794,12 +4732,12 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
   transition: 0.3s ease-in-out;
 }
 
-.assistance-card-wrapper .single-card:hover {
+.single-assistance:hover {
   -webkit-box-shadow: 0px 8px 57px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 8px 57px rgba(0, 0, 0, 0.16);
 }
 
-.assistance-card-wrapper .single-card .card-head {
+.single-assistance .ass-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4810,85 +4748,25 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
   border-bottom: 1px solid #eceff4;
 }
 
-.assistance-card-wrapper .single-card .card-head .ass-icon {
-  width: 56px;
-  margin-right: 28px;
+.single-assistance .ass-top .ass-icon {
+  margin-right: 30px;
+  max-width: 60px;
 }
 
-.assistance-card-wrapper .single-card .card-head .ass-title {
-  font-style: normal;
-  font-weight: 500;
+.single-assistance .ass-top .ass-title h3 {
   font-size: 18px;
   line-height: 120%;
-  color: #1c1c1c;
-}
-
-.assistance-card-wrapper .single-card .card-body {
-  padding: 30px 20px;
-}
-
-.assistance-card-wrapper .single-card .card-body p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 100%;
-  color: #54657e;
-  margin-bottom: 15px;
-}
-
-.assistance-card-wrapper .single-card .card-body .button {
-  background: rgba(77, 77, 203, 0.1);
-  border: 1px solid #4d4dcb;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  font-size: 16px;
-  color: #4d4dcb;
   font-weight: 500;
-  font-family: Roboto;
-  height: 41px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  font-family: "Roboto", sans-serif;
 }
 
-.assistance-card-wrapper .single-card .card-body .button:hover {
-  background-color: #4d4dcb;
-  color: #fff !important;
+.single-assistance .ass-bottom {
+  padding: 20px 30px 40px;
 }
 
-.assistance-card-wrapper .single-card .card-body .subscription-form {
-  position: relative;
-  z-index: 1;
-}
-
-.assistance-card-wrapper .single-card .card-body .subscription-form input {
-  border: none;
-  background-color: #e2e2e2;
-  height: 41px;
-}
-
-.assistance-card-wrapper .single-card .card-body .subscription-form input:focus {
-  border: 1px solid #4d4dcb;
-  border-radius: 4px;
-}
-
-.assistance-card-wrapper .single-card .card-body .subscription-form button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: #4d4dcb;
-  color: #fff;
-  border: none;
-  z-index: 9;
-}
-
-.assistance-card-wrapper .single-card .card-body .subscription-form button i.fa {
-  color: #fff;
-}
-
-.assistance-card-wrapper .single-card .card-body .subscription-form button:hover {
-  background-color: #28288a;
-  color: #fff;
+.single-assistance .ass-bottom p {
+  color: #54657e;
+  font-size: 16px;
 }
 
 .assistance-area .section-title,
