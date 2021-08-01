@@ -3,7 +3,7 @@
 ========================*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:400,400i,500,500i,700");
 @import url(/assets/css/calendly.css);
-@import url(/home/mohin/hugo-project/stash/website/static/assets/css/video-js.css);
+@import url(d:\appscode\voyager\website\static\assets\css\video-js.css);
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -289,6 +289,60 @@ h6 {
 .is-white-gray {
   background-color: #e9e9f0;
   border: none;
+}
+
+.notification-area {
+  cursor: pointer;
+  padding-top: 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.notification-area.notification {
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.notification-area.notification .delete {
+  right: 15px;
+  top: 11px;
+}
+
+.notification-area.notification .notification-inner {
+  min-height: 45px;
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+.notification-area.notification .notification-inner p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.notification-area.notification .notification-inner p a {
+  font-weight: 600 !important;
+  padding: 0 5px;
+  font-family: Roboto;
+}
+
+.notification-area.is-primary {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00a651+0,1971bd+100 */
+  background: #00a651;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #00a651 0%, #1971bd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a651', endColorstr='#1971bd', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
 }
 
 /* Deafult Margin & Padding */
@@ -4321,94 +4375,94 @@ Responsive Classes
 }
 
 /*==================================================
-                  Theme stash Start
+                  Theme voyager Start
   ====================================================*/
-body.stash .kubedb-primary-bg,
-body.stash .kd-primary,
-body.stash.fixed-nav .fixed-menu,
-body.stash .socail-link-inline li a:hover,
-body.stash .tbl-of-contents ul a.active:before,
-body.stash .kd-version a.dropdown-item:hover,
-body.stash .ac-dropdown a.navbar-item:hover,
-body.stash a.nav-link.active:after,
-body.stash .trial-button .button,
-body.stash .pricing-top,
-body.stash .pricing-button .kd-button,
-body.stash .subscription-form .button:hover,
-body.stash .searchbar-area button,
-body.stash .pagination-list li a.is-active,
-body.stash .single-product-feature-wrapper:after,
-body.stash .assistance-card-wrapper .single-card .card-body .subscription-form .button,
-body.stash .assistance-card-wrapper .single-card .card-body .button:hover {
-  background-color: #5E2DEA;
+body.voyager .kubedb-primary-bg,
+body.voyager .kd-primary,
+body.voyager.fixed-nav .fixed-menu,
+body.voyager .socail-link-inline li a:hover,
+body.voyager .tbl-of-contents ul a.active:before,
+body.voyager .kd-version a.dropdown-item:hover,
+body.voyager .ac-dropdown a.navbar-item:hover,
+body.voyager a.nav-link.active:after,
+body.voyager .trial-button .button,
+body.voyager .pricing-top,
+body.voyager .pricing-button .kd-button,
+body.voyager .subscription-form .button:hover,
+body.voyager .searchbar-area button,
+body.voyager .pagination-list li a.is-active,
+body.voyager .single-product-feature-wrapper:after,
+body.voyager .assistance-card-wrapper .single-card .card-body .subscription-form .button,
+body.voyager .assistance-card-wrapper .single-card .card-body .button:hover {
+  background-color: #2d2979;
 }
 
-body.stash .kd-transparent-btn,
-body.stash .carousel-wrapper:after,
-body.stash .cta-text h2,
-body.stash .main-menu-button a,
-body.stash .navbar-link.is-active,
-body.stash .navbar-link:hover,
-body.stash a.navbar-item.is-active,
-body.stash a.navbar-item:hover,
-body.stash .customize-kubedb .navbar-dropdown .navbar-item,
-body.stash .carousel-wrapper:after,
-body.stash .footer-link li a:hover,
-body.stash .footer-inline-link a:hover,
-body.stash .accordion-item.active .accordion-header h2,
-body.stash ul li b,
-body.stash .full-info p b,
-body.stash .full-info ul li p a,
-body.stash .full-info p a,
-body.stash .full-info a,
-body.stash .tbl-of-contents ul a.active,
-body.stash li.nav-item.active a,
-body.stash .item ul li.is-active a,
-body.stash .kd-sidebar-menu li a:hover,
-body.stash .subscription-form .button,
-body.stash .section-title h4,
-body.stash .hero-content-inner h4,
-body.stash .single-search-result h3 a,
-body.stash .assistance-card-wrapper .single-card .card-body .button {
-  color: #5E2DEA;
+body.voyager .kd-transparent-btn,
+body.voyager .carousel-wrapper:after,
+body.voyager .cta-text h2,
+body.voyager .main-menu-button a,
+body.voyager .navbar-link.is-active,
+body.voyager .navbar-link:hover,
+body.voyager a.navbar-item.is-active,
+body.voyager a.navbar-item:hover,
+body.voyager .customize-kubedb .navbar-dropdown .navbar-item,
+body.voyager .carousel-wrapper:after,
+body.voyager .footer-link li a:hover,
+body.voyager .footer-inline-link a:hover,
+body.voyager .accordion-item.active .accordion-header h2,
+body.voyager ul li b,
+body.voyager .full-info p b,
+body.voyager .full-info ul li p a,
+body.voyager .full-info p a,
+body.voyager .full-info a,
+body.voyager .tbl-of-contents ul a.active,
+body.voyager li.nav-item.active a,
+body.voyager .item ul li.is-active a,
+body.voyager .kd-sidebar-menu li a:hover,
+body.voyager .subscription-form .button,
+body.voyager .section-title h4,
+body.voyager .hero-content-inner h4,
+body.voyager .single-search-result h3 a,
+body.voyager .assistance-card-wrapper .single-card .card-body .button {
+  color: #2d2979;
 }
 
-body.stash .star-count::before,
-body.stash .accordion-item.active,
-body.stash blockquote,
-body.stash .input.is-active,
-body.stash .input.is-focused,
-body.stash .input:active,
-body.stash .input:focus,
-body.stash .textarea.is-active,
-body.stash .textarea.is-focused,
-body.stash .textarea:active,
-body.stash .textarea:focus,
-body.stash .searchbar-area input:focus,
-body.stash .subscription-form .input:hover,
-body.stash .assistance-card-wrapper .single-card .card-body .subscription-form input {
-  border-color: #5E2DEA;
+body.voyager .star-count::before,
+body.voyager .accordion-item.active,
+body.voyager blockquote,
+body.voyager .input.is-active,
+body.voyager .input.is-focused,
+body.voyager .input:active,
+body.voyager .input:focus,
+body.voyager .textarea.is-active,
+body.voyager .textarea.is-focused,
+body.voyager .textarea:active,
+body.voyager .textarea:focus,
+body.voyager .searchbar-area input:focus,
+body.voyager .subscription-form .input:hover,
+body.voyager .assistance-card-wrapper .single-card .card-body .subscription-form input {
+  border-color: #2d2979;
 }
 
-body.stash .pricing-top:before {
-  border-right-color: #3d12b8;
+body.voyager .pricing-top:before {
+  border-right-color: #181640;
 }
 
-body.stash .assistance-card-wrapper .single-card .card-body .subscription-form .button:hover {
-  background-color: #3d12b8;
+body.voyager .assistance-card-wrapper .single-card .card-body .subscription-form .button:hover {
+  background-color: #181640;
 }
 
-body.stash .go-to-top {
-  background-color: rgba(94, 45, 234, 0.8);
+body.voyager .go-to-top {
+  background-color: rgba(45, 41, 121, 0.8);
 }
 
-body.stash .documentation-menu,
-body.stash .assistance-card-wrapper .single-card .card-body .button {
-  background-color: #dfd5fb;
+body.voyager .documentation-menu,
+body.voyager .assistance-card-wrapper .single-card .card-body .button {
+  background-color: #cdcbed;
 }
 
 /*==================================================
-                  Theme stash End
+                  Theme voyager End
   ====================================================*/
 .features-plan .hero-area-content .hero-content-inner h1 {
   font-size: 36px;
@@ -4437,16 +4491,12 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 9;
-  top: 50px;
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-left {
   width: 30%;
-  padding: 72px 20px;
-  height: 266px;
+  padding: 30px 20px;
+  border-right: 1px solid #eceff4;
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-left.fp-cta-bg {
@@ -4476,15 +4526,12 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 266px;
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta {
-  padding: 20px 20px 140px 20px;
-  border-left: 1px solid #eceff4;
+  padding: 20px 20px 80px 20px;
   position: relative;
   z-index: 1;
-  min-height: 265px;
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta.community {
@@ -4492,7 +4539,7 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta.enterprise {
-  width: 70%;
+  width: 100%;
 }
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta.enterprise .button.ac-button.is-secondary {
@@ -4530,7 +4577,7 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
 
 .features-cta-area .features-plan-cta-wrapper .cta-right .single-cta .bottom-content {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 0px;
   width: 100%;
 }
@@ -4715,8 +4762,8 @@ body.stash .assistance-card-wrapper .single-card .card-body .button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 30% 70%;
-      grid-template-columns: 30% 70%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
 }
 
 .features-plan-area .single-features-area .single-features .features-plan-wrapper .features-plan {
@@ -5043,7 +5090,6 @@ Responsive Classes
   .features-cta-area .features-plan-cta-wrapper .cta-left {
     width: 30%;
     padding: 50px 20px;
-    height: 266px;
   }
   .features-cta-area .features-plan-cta-wrapper .cta-left h2 {
     font-size: 26px;
@@ -6339,4 +6385,3 @@ Responsive Classes
             flex-direction: column-reverse;
   }
 }
-/*# sourceMappingURL=main.css.map */
