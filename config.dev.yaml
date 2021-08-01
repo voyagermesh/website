@@ -24,8 +24,8 @@ params:
   search_api_key: AIzaSyBrcwLTnL09geNrFMUx1kpL--dT1379aag
   blog_url: https://blog.byte.builders
   slack_url: https://slack.appscode.com
-  github_url: https://github.com/voyagermesh
-  twitter_url: https://twitter.com/voyagermesh
+  github_url: https://github.com/appscode
+  twitter_url: https://twitter.com/AppsCodeHQ
   facebook_url: https://www.facebook.com/appscode
   youtube_url: https://www.youtube.com/c/AppsCodeInc
   contact_email: support@appscode.com
