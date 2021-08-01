@@ -33,6 +33,7 @@
     .cta-left {
       width: 30%;
       padding: 30px 20px;
+      border-right: 1px solid #eceff4;
       // height: 266px;
 
       &.fp-cta-bg {
@@ -65,7 +66,6 @@
 
       .single-cta {
         padding: 20px 20px 80px 20px;
-        border-left: 1px solid #eceff4;
         position: relative;
         z-index: 1;
         // min-height: 265px;
@@ -75,7 +75,7 @@
         }
 
         &.enterprise {
-          width: 70%;
+          width: 100%;
 
           .button {
             &.ac-button {
@@ -316,7 +316,7 @@
         display: grid;
         align-items: center;
         // width: 65%;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 100%;
 
         .features-plan {
           font-weight: 400;
