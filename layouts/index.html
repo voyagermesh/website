@@ -83,7 +83,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.0.2/keen-slider.min.js"></script>
 <script>
-  // initilize keen slider
+  // initilize keen slider 
   var slider = new KeenSlider("#hero-area-carousel", {
     spacing: 10,
     slidesPerView: 1,
@@ -101,7 +101,7 @@
       updateClasses(instance);
     },
     created: function(instance) {
-
+     
       var dots_wrapper = document.getElementById("dots");
       var slides = document.querySelectorAll(".keen-slider__slide");
       slides.forEach(function(t, idx) {
@@ -119,7 +119,7 @@
     }
   });
 
-  // For auto-play
+  // For auto-play 
   var sliderElement = document.getElementById("hero-area-carousel");
   var interval = 0;
   function autoplay(run) {
@@ -130,7 +130,7 @@
       }
     }, 2000);
   }
-  // when hover slider element autoPlay off
+  // when hover slider element autoPlay off 
   sliderElement.addEventListener("mouseover", () => {
     autoplay(false);
   });
@@ -144,10 +144,10 @@
   dots_wrapper.addEventListener("mouseout", () => {
     autoplay(true);
   });
-
+  
   autoplay(true);
 
-  // For dots
+  // For dots 
   function updateClasses(instance) {
     var slide = instance.details().relativeSlide;
     var dots = document.querySelectorAll(".dot");
