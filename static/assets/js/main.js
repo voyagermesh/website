@@ -42,14 +42,10 @@ function fixNav() {
     if (notificationArea.style.display === "block") {
       if (window.innerWidth <= 550) {
         headerBottom.style.top = "72px";
-        if(documentationMenu){
-          documentationMenu.style.top = "130px";
-        }
+        documentationMenu.style.top = "130px";
       } else {
         headerBottom.style.top = "45px";
-        if(documentationMenu){
-          documentationMenu.style.top = "103px";
-        }
+        documentationMenu.style.top = "103px";
         leftSidebar.style.top = "150px";
         rightSidebar.style.top = "150px";
       }
