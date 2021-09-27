@@ -64,9 +64,7 @@ metadata:
   namespace: default
 spec:
   tls:
-  - ref:
-      kind: Secret
-      name: server
+  - secretName: server
     hosts:
     - auth.example.com
   rules:
