@@ -17,7 +17,7 @@
   "homepage": "https://github.com/voyagermesh/website#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "postcss-cli": "^6.1.3"
+    "postcss-cli": "^9.1.0"
   },
   "private": true
 }
