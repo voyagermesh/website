@@ -47,4 +47,4 @@ markup:
     renderer:
       unsafe: true
   highlight:
-      style: manni
+    style: manni
