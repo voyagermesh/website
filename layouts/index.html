@@ -66,14 +66,11 @@ url(./assets/images/bg-image/gradient-bg.webp);">
             </div>
 {{ highlight (printf `$ helm repo add appscode https://charts.appscode.com/stable/
 $ helm repo update
-
-$ helm search repo appscode/voyager --version %s
-
 $ helm install voyager-operator appscode/voyager \
 --version %s \
 --namespace voyager --create-namespace \
 --set cloudProvider=$provider \
---set-file license=/path/to/the/license.txt` $p.latestVersion $p.latestVersion) "bash" "style=dracula" }}
+--set-file license=/path/to/the/license.txt` $p.latestVersion) "bash" "style=dracula" }}
           </div>
         </div>
         <!-- code editor end  -->
