@@ -49,7 +49,7 @@ jobs:
 
       - name: Install Firebase CLI
         run: |
-          npm i -g firebase-tools
+          npm i -g firebase-tools@v11.14.1
 
       - name: QA
         env:
