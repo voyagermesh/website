@@ -92,15 +92,9 @@
   {{ with $style := resources.Get "assets/css/bulma.min.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   {{ end }}
-  <!-- highlight css  -->
-  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"> -->
   <!-- owl carousel CSS -->
   <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
   <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
-
-  <!-- <link rel="stylesheet" href="/assets/css/bulma.min.css" /> -->
-  <!-- Keen slider CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
   <!-- Custom CSS -->
   {{ with $style := resources.Get "assets/sass/main.scss" | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
@@ -795,6 +789,46 @@
   {{ end }}
   <!-- ========================== header area end ==========================-->
 
+  <!--========================== cookies area start ==========================-->
+  <div class="cookie-wrapper">
+    <div class="container">
+      <div class="cookie-content">
+        <p>We use cookies and other similar technology to collect data to improve your experience on our site, as
+          described in our <a href="https://appscode.com/legal/privacy-policy/" target="_blank">Privacy Policy</a>.</p>
+        <div class="buttons">
+          <button class="button close-btn">Close</button>
+          <button class="button ac-button is-primary">ACCEPT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // for cookie
+    const cookieBox = document.querySelector(".cookie-wrapper"),
+      acceptBtn = cookieBox.querySelector(".is-primary"),
+      closeBtn = cookieBox.querySelector(".close-btn");
+
+    // close cookie box 
+    closeBtn.addEventListener("click", function () {
+      cookieBox.classList.add("hide");
+    })
+
+    acceptBtn.addEventListener("click", function () {
+      //setting cookie for 1 month, after one month it'll be expired automatically
+      document.cookie = `CookieBy=Voyager; path=/; max-age=${60 * 60 * 24 * 365}`;
+      if (document.cookie) { //if cookie is set
+        cookieBox.classList.add("hide"); //hide cookie box
+      } else { //if cookie not set then alert an error
+        alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+      }
+    });
+    let checkCookie = document.cookie.indexOf("CookieBy=Voyager"); //checking our cookie
+    //if cookie is set then hide the cookie box else show it
+    checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+  </script>
+  <!--========================== cookies area end ==========================-->
+
   <div class="modal-backdrop"></div>
 
   <!-- Code that all your templates share, like a header -->
@@ -1064,9 +1098,6 @@
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <!-- lordicon js  -->
   <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-
-  <!-- Bulma Carousel JS -->
-  <script src="/assets/js/bulma-carousel.min.js"></script>
   <!-- Magnific-popup JS  -->
   <script src="/assets/js/magnific-popup.min.js"></script>
   <!-- AOS JS -->
@@ -1075,8 +1106,6 @@
   <script src="https://unpkg.com/downloadjs@1.4.7/download.min.js"></script>
   <!-- clipboard js  -->
   <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
-  <!-- highlight js  -->
-  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
 
 
   <!-- <script src="/assets/js/main.js"></script>
