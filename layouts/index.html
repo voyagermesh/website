@@ -95,7 +95,7 @@ url(./assets/images/bg-image/gradient-bg.webp);">
             </div>
 {{ highlight (printf `$ helm repo add appscode https://charts.appscode.com/stable/
 $ helm repo update
-$ helm install voyager-operator appscode/voyager \
+$ helm install voyager appscode/voyager \
 --version %s \
 --namespace voyager --create-namespace \
 --set cloudProvider=$provider \
