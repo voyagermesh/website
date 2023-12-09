@@ -93,13 +93,12 @@ url(./assets/images/bg-image/gradient-bg.webp);">
               <span class="action maximize"></span>
               <span class="action minimize"></span>
             </div>
-{{ highlight (printf `$ helm repo add appscode https://charts.appscode.com/stable/
-$ helm repo update
-$ helm install voyager appscode/voyager \
+{{ highlight (printf `$ helm install voyager oci://ghcr.io/appscode-charts/voyager \
 --version %s \
 --namespace voyager --create-namespace \
 --set cloudProvider=$provider \
---set-file license=/path/to/the/license.txt` $p.latestVersion) "bash" "style=dracula" }}
+--set-file license=/path/to/the/license.txt \
+--wait --burst-limit=10000 --debug` $p.latestVersion) "bash" "style=dracula" }}
           </div>
         </div>
         <!-- code editor end  -->
