@@ -93,7 +93,7 @@ url(./assets/images/bg-image/gradient-bg.webp);">
               <span class="action maximize"></span>
               <span class="action minimize"></span>
             </div>
-{{ highlight (printf `$ helm install voyager oci://ghcr.io/appscode-charts/voyager \
+{{ highlight (printf `helm install voyager oci://ghcr.io/appscode-charts/voyager \
 --version %s \
 --namespace voyager --create-namespace \
 --set cloudProvider=$provider \
