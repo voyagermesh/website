@@ -1,0 +1,6 @@
+{{ highlight (printf `helm install voyager oci://ghcr.io/appscode-charts/voyager \
+  --version %s \
+  --namespace voyager --create-namespace \
+  --set cloudProvider=$provider \
+  --set-file license=/path/to/the/license.txt \
+  --wait --burst-limit=10000 --debug` $p.latestVersion) "bash" "style=dracula" }}
