@@ -10,6 +10,7 @@ theme: hugo-product-theme
 params:
   product_key: voyager
   primary_color: 2D2A78
+  appscode_notification_show: true
   main_menu_dropdown_item: database
   domain_appscode: https://appscode.com
   domain_bytebuilders: https://appscode.com
