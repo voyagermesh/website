@@ -1,0 +1,15 @@
+---
+title: cert-manager
+menu:
+  docs_v2026.3.23:
+    identifier: cert-manager-guides
+    name: Cert Manager
+    parent: guides
+    weight: 200
+menu_name: docs_v2026.3.23
+info:
+  cli: v0.1.0
+  installer: v2026.3.23
+  version: v2026.3.23
+---
+
