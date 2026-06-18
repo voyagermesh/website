@@ -46,6 +46,15 @@ params:
   learn_url: https://appscode.com/learn
   docs_url: https://appscode.com/docs
 menu:
+  product_voyager:
+  - name: Pricing
+    identifier: pricing
+    url: /pricing/
+    weight: 10
+  - name: Documentation
+    identifier: documentation
+    url: /docs/v2026.3.23/
+    weight: 20
   main:
   - name: Documentation
     weight: 20
