@@ -51,8 +51,8 @@
       "title": "Vault Kubernetes Deployment",
       "url": "vault-kubernetes-deployment",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-1.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/vault-kubernetes-deployment.svg",
+        "alt": "Vault Kubernetes Deployment"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/vaultserverversions.svg",
@@ -65,8 +65,8 @@
       "title": "Auto Initialization & Unsealing",
       "url": "auto-initialization-and-unsealing",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-1.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/auto-initialization-and-unsealing.svg",
+        "alt": "Auto Initialization and Unsealing"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/automated-unsealing.svg",
@@ -79,8 +79,8 @@
       "title": "Vault Backup & Restore",
       "url": "vault-backup-restore",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-6.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/vault-backup-restore.svg",
+        "alt": "Vault Backup and Restore"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/vault-backup-restore.svg",
@@ -93,8 +93,8 @@
       "title": "Consume KubeVault Secrets with CSI",
       "url": "consume-kubevault-secrets-with-csi",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-5.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/consume-kubevault-secrets-with-csi.svg",
+        "alt": "Consume KubeVault Secrets with CSI"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/secrets.svg",
@@ -107,8 +107,8 @@
       "title": "Manage DB Users Privileges",
       "url": "manage-db-users-privileges",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-4.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/manage-db-users-privileges.svg",
+        "alt": "Manage DB Users Privileges"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/database-users.svg",
@@ -121,8 +121,8 @@
       "title": "Storage Backend",
       "url": "storage-backend",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-2.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/storage-backend.svg",
+        "alt": "Storage Backend"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/storageclasses.svg",
@@ -135,8 +135,8 @@
       "title": "Authentication Method",
       "url": "authentication-method",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-3.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/authentication-method.svg",
+        "alt": "Authentication Method"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/auth.svg",
@@ -149,8 +149,8 @@
       "title": "Database Secret Engine",
       "url": "database-secret-engine",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-4.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/database-secret-engine.svg",
+        "alt": "Database Secret Engine"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/database-view.png",
@@ -163,8 +163,8 @@
       "title": "Azure Secret Engine",
       "url": "azure-secret-engine",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-4.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/azure-secret-engine.svg",
+        "alt": "Azure Secret Engine"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/azure.png",
@@ -177,8 +177,8 @@
       "title": "AWS Secret Engine",
       "url": "aws-secret-engine",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-4.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/aws-secret-engine.svg",
+        "alt": "AWS Secret Engine"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/aws.png",
@@ -191,8 +191,8 @@
       "title": "GCP Secret Engine",
       "url": "gcp-secret-engine",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-4.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/gcp-secret-engine.svg",
+        "alt": "GCP Secret Engine"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/google-cloud.png",
@@ -205,8 +205,8 @@
       "title": "Kubectl Plugin",
       "url": "kubectl-plugin",
       "image": {
-        "src": "/assets/images/products/kubevault/features/feature-6.png",
-        "alt": "http"
+        "src": "/assets/images/products/kubevault/features/kubectl-plugin.svg",
+        "alt": "Kubectl Plugin"
       },
       "icon": {
         "src": "/assets/images/products/kubevault/features/plugin.svg",
@@ -223,6 +223,28 @@
       "show": true
     },
     {
+      "version": "v2026.5.18-rc.1",
+      "hostDocs": true,
+      "show": true,
+      "info": {
+        "cli": "v0.25.0-rc.1",
+        "installer": "v2026.5.18-rc.1",
+        "operator": "v0.25.0-rc.1",
+        "unsealer": "v0.25.0-rc.1"
+      }
+    },
+    {
+      "version": "v2026.5.14-rc.0",
+      "hostDocs": false,
+      "show": false,
+      "info": {
+        "cli": "v0.25.0-rc.0",
+        "installer": "v2026.5.14-rc.0",
+        "operator": "v0.25.0-rc.0",
+        "unsealer": "v0.25.0-rc.0"
+      }
+    },
+    {
       "version": "v2026.2.27",
       "hostDocs": true,
       "show": true,
@@ -235,8 +257,8 @@
     },
     {
       "version": "v2026.1.8-rc.0",
-      "hostDocs": true,
-      "show": true,
+      "hostDocs": false,
+      "show": false,
       "info": {
         "cli": "v0.24.0-rc.0",
         "installer": "v2026.1.8-rc.0",
@@ -312,7 +334,7 @@
     },
     {
       "version": "v2024.3.12",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.18.0",
@@ -323,7 +345,7 @@
     },
     {
       "version": "v2024.1.31",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.17.0",
@@ -334,7 +356,7 @@
     },
     {
       "version": "v2024.1.28-rc.1",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "cli": "v0.17.0-rc.1",
         "installer": "v2024.1.28-rc.1",
@@ -344,7 +366,7 @@
     },
     {
       "version": "v2024.1.26-rc.0",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "cli": "v0.17.0-rc.0",
         "installer": "v2024.1.26-rc.0",
@@ -354,7 +376,7 @@
     },
     {
       "version": "v2023.9.7",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.16.0",
@@ -365,7 +387,7 @@
     },
     {
       "version": "v2023.05.05",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.15.0",
@@ -376,7 +398,7 @@
     },
     {
       "version": "v2023.03.03",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.14.0",
@@ -387,7 +409,7 @@
     },
     {
       "version": "v2022.12.28",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.13.0",
@@ -398,7 +420,7 @@
     },
     {
       "version": "v2022.12.09",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.12.0",
@@ -409,7 +431,7 @@
     },
     {
       "version": "v2022.11.30",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.11.0",
@@ -420,7 +442,7 @@
     },
     {
       "version": "v2022.09.22",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.10.0",
@@ -431,7 +453,7 @@
     },
     {
       "version": "v2022.09.09",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.9.0",
@@ -442,7 +464,7 @@
     },
     {
       "version": "v2022.09.05-rc.0",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.9.0-rc.0",
@@ -453,7 +475,7 @@
     },
     {
       "version": "v2022.06.16",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.8.0",
@@ -464,7 +486,7 @@
     },
     {
       "version": "v2022.02.22",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.7.0",
@@ -475,7 +497,7 @@
     },
     {
       "version": "v2022.01.11",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.6.0",
@@ -486,7 +508,7 @@
     },
     {
       "version": "v2021.10.11",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.5.1",
@@ -497,7 +519,7 @@
     },
     {
       "version": "v2021.09.27",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.5.0",
@@ -508,7 +530,7 @@
     },
     {
       "version": "v2021.08.02",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.4.0",

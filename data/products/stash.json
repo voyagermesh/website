@@ -60,7 +60,7 @@
     {
       "title": "Declarative API",
       "image": {
-        "src": "/assets/images/addons/illustrations/declarative-api.png",
+        "src": "/assets/images/addons/illustrations/declarative-api.svg",
         "alt": "http"
       },
       "icon": {
@@ -73,7 +73,7 @@
     {
       "title": "Backup Kubernetes Volumes",
       "image": {
-        "src": "/assets/images/addons/illustrations/backup-kubernetes-volumes.png",
+        "src": "/assets/images/addons/illustrations/backup-kubernetes-volumes.svg",
         "alt": "http"
       },
       "icon": {
@@ -86,7 +86,7 @@
     {
       "title": "Backup Database",
       "image": {
-        "src": "/assets/images/addons/illustrations/backup-restore-databases.png",
+        "src": "/assets/images/addons/illustrations/backup-restore-databases.svg",
         "alt": "http"
       },
       "icon": {
@@ -97,9 +97,22 @@
       "description": "Backup your databases deployed in Kubernetes. Stash supports backup of MariaDB, Redis, PostgreSQL, MySQL, MongoDB, Elasticsearch and Percona XtraDB, Etcd databases. It seemingly integrates with KubeDB. It is now a recommended method to backup KubeDB supported databases."
     },
     {
+      "title": "Backup Virtual Machines",
+      "image": {
+        "src": "/assets/images/features/illustrations/backup-virtual-machines.svg",
+        "alt": "Several virtual machines running on a host being captured into a scheduled, restorable backup"
+      },
+      "icon": {
+        "src": "/assets/images/products/stash/features/kub-workload.svg",
+        "alt": "http"
+      },
+      "summary": "",
+      "description": "Protect virtual machines running on Kubernetes with the same policy-driven workflow used for your databases and volumes. Stash schedules backups, verifies snapshots, and restores VMs on demand — no separate tooling required."
+    },
+    {
       "title": "Multiple Storage Support",
       "image": {
-        "src": "/assets/images/addons/illustrations/multiple-storage-support.png",
+        "src": "/assets/images/addons/illustrations/multiple-storage-support.svg",
         "alt": "http"
       },
       "icon": {
@@ -112,7 +125,7 @@
     {
       "title": "Deduplication",
       "image": {
-        "src": "/assets/images/addons/illustrations/deduplication.png",
+        "src": "/assets/images/addons/illustrations/deduplication.svg",
         "alt": "http"
       },
       "icon": {
@@ -125,7 +138,7 @@
     {
       "title": "Data Encryption",
       "image": {
-        "src": "/assets/images/addons/illustrations/data-encryption.png",
+        "src": "/assets/images/addons/illustrations/data-encryption.svg",
         "alt": "http"
       },
       "icon": {
@@ -138,7 +151,7 @@
     {
       "title": "Volume Snapshot",
       "image": {
-        "src": "/assets/images/addons/illustrations/volume-snapshot.png",
+        "src": "/assets/images/addons/illustrations/volume-snapshot.svg",
         "alt": "http"
       },
       "icon": {
@@ -151,7 +164,7 @@
     {
       "title": "Policy Based Backup",
       "image": {
-        "src": "/assets/images/addons/illustrations/policy-based-backup.png",
+        "src": "/assets/images/addons/illustrations/policy-based-backup.svg",
         "alt": "http"
       },
       "icon": {
@@ -164,7 +177,7 @@
     {
       "title": "Monitoring",
       "image": {
-        "src": "/assets/images/addons/illustrations/monitoring.png",
+        "src": "/assets/images/addons/illustrations/monitoring.svg",
         "alt": "http"
       },
       "icon": {
@@ -836,7 +849,7 @@
     },
     {
       "version": "v2024.4.8",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.34.0",
@@ -917,7 +930,7 @@
     },
     {
       "version": "v2024.2.13",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.33.0",
@@ -997,7 +1010,7 @@
     },
     {
       "version": "v2024.2.9-rc.0",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "cli": "v0.33.0-rc.0",
         "community": "v0.33.0-rc.0",
@@ -1076,7 +1089,7 @@
     },
     {
       "version": "v2023.10.9",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.32.0",
@@ -1156,7 +1169,7 @@
     },
     {
       "version": "v2023.08.18",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.31.0",
@@ -1236,7 +1249,7 @@
     },
     {
       "version": "v2023.05.31",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.30.0",
@@ -1315,7 +1328,7 @@
     },
     {
       "version": "v2023.04.30",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.29.0",
@@ -1394,7 +1407,7 @@
     },
     {
       "version": "v2023.03.20",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.28.0",
@@ -1472,7 +1485,7 @@
     },
     {
       "version": "v2023.03.13",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.27.0",
@@ -1550,7 +1563,7 @@
     },
     {
       "version": "v2023.02.28",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.26.0",
@@ -1628,7 +1641,7 @@
     },
     {
       "version": "v2023.01.05",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.25.0",
@@ -1706,7 +1719,7 @@
     },
     {
       "version": "v2022.12.11",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.24.0",
@@ -1784,7 +1797,7 @@
     },
     {
       "version": "v2022.09.29",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.23.0",
@@ -1858,7 +1871,7 @@
     },
     {
       "version": "v2022.07.09",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.22.0",
@@ -1931,7 +1944,7 @@
     },
     {
       "version": "v2022.06.27",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.21.0",
@@ -2004,7 +2017,7 @@
     },
     {
       "version": "v2022.06.21",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.21.0",
@@ -2077,7 +2090,7 @@
     },
     {
       "version": "v2022.05.18",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.20.0",
@@ -2150,7 +2163,7 @@
     },
     {
       "version": "v2022.05.12",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.20.0",
@@ -2221,7 +2234,7 @@
     },
     {
       "version": "v2022.03.29",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.19.0",
@@ -2289,7 +2302,7 @@
     },
     {
       "version": "v2022.02.22",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.18.0",
@@ -2357,7 +2370,7 @@
     },
     {
       "version": "v2021.11.24",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.17.0",
@@ -2424,7 +2437,7 @@
     },
     {
       "version": "v2021.10.11",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.16.0",
@@ -2490,7 +2503,7 @@
     },
     {
       "version": "v2021.08.02",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.15.0",
@@ -2548,7 +2561,7 @@
     },
     {
       "version": "v2021.06.23",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.14.1",
@@ -2602,7 +2615,7 @@
     },
     {
       "version": "v2021.6.18",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.14.0",
@@ -2656,7 +2669,7 @@
     },
     {
       "version": "v2021.04.12",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.12.3",
@@ -2813,7 +2826,7 @@
     },
     {
       "version": "v2021.03.17",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "cli": "v0.12.0",
@@ -2866,7 +2879,7 @@
     },
     {
       "version": "v2021.03.11",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v2021.03.11",
         "cli": "v0.11.11",
@@ -2919,7 +2932,7 @@
     },
     {
       "version": "v2021.03.08",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v2021.03.08",
         "cli": "v0.11.10",
@@ -2972,7 +2985,7 @@
     },
     {
       "version": "v2021.01.21",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2021.01.21",
@@ -3026,7 +3039,7 @@
     },
     {
       "version": "v2020.12.17",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.12.17",
@@ -3079,7 +3092,7 @@
     },
     {
       "version": "v2020.11.17",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.11.17",
@@ -3129,7 +3142,7 @@
     },
     {
       "version": "v2020.11.06",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.11.06",
@@ -3178,7 +3191,7 @@
     },
     {
       "version": "v2020.10.30",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.10.30",
@@ -3227,7 +3240,7 @@
     },
     {
       "version": "v2020.10.29",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.10.29",
@@ -3276,7 +3289,7 @@
     },
     {
       "version": "v2020.10.21",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.10.21",
@@ -3325,7 +3338,7 @@
     },
     {
       "version": "v2020.09.29",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.09.29",
@@ -3373,7 +3386,7 @@
     },
     {
       "version": "v2020.09.16",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.09.16",
@@ -3421,7 +3434,7 @@
     },
     {
       "version": "v2020.08.27-rc.0",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v2020.08.27-rc.0",
         "cli": "v0.10.0-rc.2",
@@ -3431,7 +3444,7 @@
     },
     {
       "version": "v2020.08.27",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v2020.08.27",
@@ -3442,7 +3455,7 @@
     },
     {
       "version": "v2020.08.26-rc.1",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v2020.08.26-rc.1",
         "cli": "v0.10.0-rc.1"
@@ -3450,7 +3463,7 @@
     },
     {
       "version": "v2020.08.26-rc.0",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v2020.08.26-rc.0",
         "cli": "v0.10.0-rc.0"
@@ -3458,7 +3471,7 @@
     },
     {
       "version": "v2020.07.09-beta.0",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v2020.07.09-beta.0",
         "cli": "v0.10.0-beta.1"
@@ -3466,7 +3479,7 @@
     },
     {
       "version": "v2020.07.08-beta.0",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v2020.07.08-beta.0",
         "cli": "v0.10.0-beta.0"
@@ -3474,7 +3487,7 @@
     },
     {
       "version": "v0.9.0-rc.6",
-      "hostDocs": true,
+      "hostDocs": false,
       "show": true,
       "info": {
         "catalog": "v0.3.0",
@@ -3483,7 +3496,7 @@
     },
     {
       "version": "v0.9.0-rc.4",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v0.2.0",
         "cli": "v0.3.0"
@@ -3491,7 +3504,7 @@
     },
     {
       "version": "v0.9.0-rc.2",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v0.1.0",
         "cli": "v0.2.0"
@@ -3499,7 +3512,7 @@
     },
     {
       "version": "v0.9.0-rc.1",
-      "hostDocs": true,
+      "hostDocs": false,
       "info": {
         "catalog": "v0.1.0",
         "cli": "v0.1.0"
@@ -3507,71 +3520,71 @@
     },
     {
       "version": "v0.9.0-rc.0",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.8.3",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.8.2",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.8.1",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.8.0",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.7.0-rc.5",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.7.0-rc.4",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.7.0-rc.3",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.7.0-rc.2",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.7.0-rc.1",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.7.0-rc.0",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.7.0",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.6.4",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.6.3",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.6.2",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.6.1",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.6.0",
-      "hostDocs": true
+      "hostDocs": false
     },
     {
       "version": "0.5.1",
