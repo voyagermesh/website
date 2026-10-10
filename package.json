@@ -18,7 +18,7 @@
   "homepage": "https://github.com/voyagermesh/website#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "@fullhuman/postcss-purgecss": "^8.0.0",
     "postcss-cli": "^9.1.0",
      "sass": "^1.99.0"
   },
