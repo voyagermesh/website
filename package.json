@@ -17,13 +17,13 @@
   },
   "homepage": "https://github.com/voyagermesh/website#readme",
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^10.6.1",
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "postcss-cli": "^9.1.0",
      "sass": "^1.99.0"
   },
   "private": true,
   "dependencies": {
-    "postcss": "^8.4.12"
+    "postcss": "^8.5.29"
   }
 }
